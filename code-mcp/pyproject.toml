@@ -1,0 +1,15 @@
+[project]
+name = "code-mcp"
+version = "0.1.0"
+description = "MCP server wrapping Claude Code CLI for codebase editing with session persistence"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+code-mcp = "code_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
